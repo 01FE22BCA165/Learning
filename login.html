@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .login-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(73, 31, 151, 0.2);
+        padding: 20px;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 login-container">
+  <form name="f1" action="/action_page.php">
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+      <center>
+        Log in
+      </center>
+    </h1>
+    <div class="mb-4 mt-2 form-outline w-75" >
+      <label for="email"><b>Email:</b></label>
+      <input type="email" onchange="emailvalidation()" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3 form-outline w-75">
+      <label for="pwd" ><b>Password:</b></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <center>
+        <div class="text-center mt-4">
+            <p>Don't have an account? </p>
+        </div>
+        <a href="D:\college\FSWB\signup.html">Sign Up</a>
+      </center>
+  
+  <script>
+    function emailvalidation() 
+    {
+        var email = f1.email.value;
+        var check = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (check.test(email)) 
+        {
+            alert("Valid Email");
+        } 
+        else 
+        {
+            alert("Invalid Email");
+        }
+    }
+    </script>
+    </form>
+</body>
+</html>
