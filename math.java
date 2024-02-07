@@ -23,8 +23,12 @@ class math{
      */
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-         float x = sc.nextFloat();
-         float y = sc.nextFloat();
+
+        System.out.println("Enter first number (x): ");
+        float x = sc.nextFloat();
+
+        System.out.println("Enter second number (y): ");
+        float y = sc.nextFloat();
         fine c = new fine();
 
         float add = c.add(x, y);
