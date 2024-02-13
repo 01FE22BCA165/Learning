@@ -22,13 +22,15 @@ class math{
      * @param args
      */
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter first number (x): ");
-        float x = sc.nextFloat();
+        // System.out.println("Enter first number (x): ");
+        // float x = sc.nextFloat();
 
-        System.out.println("Enter second number (y): ");
-        float y = sc.nextFloat();
+        // System.out.println("Enter second number (y): ");
+        // float y = sc.nextFloat();
+      float x= 10;
+      float y=5;
         fine c = new fine();
 
         float add = c.add(x, y);
